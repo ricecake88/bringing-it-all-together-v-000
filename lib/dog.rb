@@ -19,8 +19,9 @@ class Dog
   end
 
 
-  self.create_table
+  self.drop_table
     sql=<<-SQL
+      DROP TABLE IF EXISTS dogs
      SQL
     
     DB[:conn].execute(sql)
