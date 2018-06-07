@@ -88,12 +88,4 @@ class Dog
     DB[:conn].execute(sql, self.name, self.breed, self.id)
   end  
   
-'''  
-  def self.create_table
-    sql=<<-SQL
-     SQL
-    
-    DB[:conn].execute(sql)
-  end  
-  '''
 end
