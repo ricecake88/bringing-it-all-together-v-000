@@ -52,7 +52,7 @@ class Dog
      SQL
     
     row = DB[:conn].execute(sql, id)
-    Dog.new(id: row[0], name: row[1], breed: row[2])
+    d = Dog.new(id: row[0], name: row[1], breed: row[2])
   end
   
 '''
