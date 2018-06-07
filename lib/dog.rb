@@ -26,6 +26,9 @@ class Dog
     
     DB[:conn].execute(sql)
   end
+  
+  def self.save
+  end
 '''  
   def self.create_table
     sql=<<-SQL
@@ -41,7 +44,7 @@ class Dog
     DB[:conn].execute(sql)
   end
   
-  self.create_table
+  def self.create_table
     sql=<<-SQL
      SQL
     
