@@ -53,6 +53,7 @@ class Dog
     
     row = DB[:conn].execute(sql, id)[0]
     d = self.create(name: row[1], breed: row[2])
+    binding.pry
   end
   
 '''
