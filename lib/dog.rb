@@ -61,6 +61,10 @@ class Dog
     
     DB[:conn].execute(sql)
   end
+  
+  def self.find_or_create_by(id)
+    
+  end
 
 '''  
   def self.create_table
