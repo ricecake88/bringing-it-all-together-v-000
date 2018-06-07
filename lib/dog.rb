@@ -27,14 +27,14 @@ class Dog
     DB[:conn].execute(sql)
   end
 '''  
-  self.create_table
+  def self.create_table
     sql=<<-SQL
      SQL
     
     DB[:conn].execute(sql)
   end
   
-  self.create_table
+  def self.create_table
     sql=<<-SQL
      SQL
     
