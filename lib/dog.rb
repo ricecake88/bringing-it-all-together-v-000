@@ -52,7 +52,7 @@ class Dog
      SQL
     
     row = DB[:conn].execute(sql, id)[0]
-    d = self.create(row)
+    d = self.create(name: row[1], breed: row[2])
   end
   
 '''
