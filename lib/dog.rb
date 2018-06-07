@@ -52,7 +52,7 @@ class Dog
      SQL
     
     row = DB[:conn].execute(sql, id)[0]
-    d = Dog.new
+    binding.pry
   end
   
 '''
