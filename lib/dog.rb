@@ -59,8 +59,6 @@ class Dog
      SQL
     
     row = DB[:conn].execute(sql, id)[0]
-    d = Dog.new(row[1], row[2])
-    d
   end
   
 '''  
