@@ -45,13 +45,6 @@ class Dog
     d
   end
 
-  def self.create_table
-    sql=<<-SQL
-     SQL
-    
-    DB[:conn].execute(sql)
-  end
-
   def self.find_by_id(id)
     sql=<<-SQL
       SELECT * FROM dogs
@@ -61,7 +54,14 @@ class Dog
     row = DB[:conn].execute(sql, id)
   end
   
-'''  
+'''
+  def self.create_table
+    sql=<<-SQL
+     SQL
+    
+    DB[:conn].execute(sql)
+  end
+  
   def self.create_table
     sql=<<-SQL
      SQL
