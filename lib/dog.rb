@@ -69,11 +69,12 @@ class Dog
     Dog.new(id: row[0], name: row[1], breed: row[2])
   end
 
-  def self.create_table
+  def self.find_by_name(name)
     sql=<<-SQL
+    SELECT * FROM dogs WHERE name = ?
      SQL
     
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql,name)
   end
 
 '''  
