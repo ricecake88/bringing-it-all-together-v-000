@@ -5,4 +5,7 @@ class Dog
     @name = name
     @breed = breed
   end
+  
+  self.create_table
+  end
 end
