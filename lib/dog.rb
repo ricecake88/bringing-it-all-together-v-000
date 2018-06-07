@@ -40,6 +40,7 @@ class Dog
   end
 
   def self.create(attributes)
+    binding.pry
     d = Dog.new
     d.save
     d
