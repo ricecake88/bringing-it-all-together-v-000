@@ -7,5 +7,10 @@ class Dog
   end
   
   self.create_table
+  sql=<<-SQL
+   SQL
+  
+  DB[:conn].execute(sql)
   end
+  
 end
