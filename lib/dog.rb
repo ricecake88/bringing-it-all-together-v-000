@@ -69,14 +69,14 @@ class Dog
     Dog.new(id: row[0], name: row[1], breed: row[2])
   end
 
-'''  
   def self.create_table
     sql=<<-SQL
      SQL
     
     DB[:conn].execute(sql)
   end
-  
+
+'''  
   def self.create_table
     sql=<<-SQL
      SQL
