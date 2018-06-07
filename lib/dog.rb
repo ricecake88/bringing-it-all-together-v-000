@@ -55,13 +55,6 @@ class Dog
     d = Dog.new(id: row[0], name: row[1], breed: row[2])
   end
   
-  def self.create_table
-    sql=<<-SQL
-     SQL
-    
-    DB[:conn].execute(sql)
-  end
-  
   def self.find_or_create_by(id)
     dog = DB[:conn].execute("SELECT * FROM WHERE id = ?", id)
     binding.pry
